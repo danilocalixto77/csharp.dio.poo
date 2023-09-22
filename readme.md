@@ -1,7 +1,7 @@
 # Programando com Orientação a Objeto com C# 
-### dio. - Leonardo Buta
+#### Curso: dio. - Professor: Leonardo Buta
 
-- 1. Introdução
+- 01. Introdução
 
 - 2. Conhecendo a Programação Orientada a Objetos
     - É um tipo de paradigma de programação, uma técnica de se programar.
