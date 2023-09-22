@@ -1,7 +1,7 @@
 # Programando com Orientação a Objeto com C# 
 #### Curso: dio. - Professor: Leonardo Buta
 
-- 01. Introdução
+- 1. Introdução
 
 - 2. Conhecendo a Programação Orientada a Objetos
     - É um tipo de paradigma de programação, uma técnica de se programar.
@@ -45,6 +45,18 @@
   - Permite reutilizar atributos, métodos e comportamentos de uma classe em outras classes.
   - Neste pilar da orientação a objetos temos uma das grandes vantagens deste paradigma no reaproveitamento de código.
 
+- 6. Polimorfismo
+  - Do grego significa "muitas formas".
+  - Com o polimorfismo podemos sobrescrever um método da classe pai na classe filha, caso ele não tenha o comportamento desejado.
+  - De maneira a ter a sua própria implementação na filha.
+  - Na classe mãe insere na declaração da assinatura 
+  - Dois tipos de polimorfismo:
+    - Em tempo de compilação:
+      - Overload/Early Binding. Sobrecarga de métodos.
+      - Desta maneira o método ele será o mesmo dentro da classe recebendo a mesma assinatura, entretanto, com mudança nos parâmetros a ser inserido no método.
+    - Em tempo de execução:
+      - Override/Late Binding. Sobrescrita de métodos. 
+      - Desta maneira o método na classe mãe receberá uma notação na sua declaração como "virtual" e na classe filha ao declarar o método deverá haver a notação de "override". Desta maneira o método poderá ser ser sobrescrito na classe filha.
 
   
 
