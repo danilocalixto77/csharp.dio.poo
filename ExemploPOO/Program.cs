@@ -81,12 +81,16 @@ namespace ExemploPOO
             ////////////////////////////////////////////////////////////////
             //Manipulação de Arquivo
             var caminho = "C:\\Projetos\\CSharp\\dio\\POO\\TrabalhandoArquivos";
+            var destino = "C:\\Projetos\\CSharp\\dio\\POO\\TrabalhandoArquivos\\PastaViaCSharp";
             //var caminhoPathCombine1 = Path.Combine(caminho, "PastaViaCSharp", "SubPastaVia");
             //var caminhoPathCombine2 = Path.Combine(caminho, "Pasta1");
-            // var caminhoArquivo = Path.Combine(caminho, "arquivo-teste.txt");
+            var caminhoArquivo = Path.Combine(caminho, "arquivo-teste.txt");
+            var caminhoArquivobkp = Path.Combine(caminho, "arquivo-teste-backup.txt");
             var caminhoArquivoStream = Path.Combine(caminho, "arquivo-testestream.txt");
+            var destinoArquivoStream = Path.Combine(destino, "SubPastaVia", "arquivo-testestream.txt");
             //var conteudoArquivo = "Olá estamos testando o conteúdo para um arquivo. Voltando ao terceiro teste";
             var listaString = new List<string> { "Teste de texto1", "Teste de texto2", "Teste de texto3", "Teste de texto4" };
+            var listaStringContinuacao = new List<string> { "Teste de texto5", "Teste de texto6", "Teste de texto7", "Teste de texto8" };
 
             FileHelper helper = new FileHelper();
             //helper.ListarDiretorios(caminho);
@@ -94,7 +98,12 @@ namespace ExemploPOO
             //helper.CriarDiretorio(caminhoPathCombine1);
             //helper.ApagarDiretorio(caminhoPathCombine2, true);
             //helper.CriarArquivoTexto(caminhoArquivo, conteudoArquivo);
-            helper.CriarArquivoTextoStream(caminhoArquivoStream, listaString);
+            //helper.CriarArquivoTextoStream(caminhoArquivoStream, listaString);
+            //helper.AdicionarTextoStream(caminhoArquivoStream, listaStringContinuacao);
+            //helper.LerArquivoStream(caminhoArquivoStream);
+            //helper.MoverArquivo(caminhoArquivoStream, destinoArquivoStream, false);
+            //helper.CopiarArquivo(caminhoArquivo, caminhoArquivobkp, false);
+            helper.DeletarArquivo(caminhoArquivobkp);
 
         }
 
