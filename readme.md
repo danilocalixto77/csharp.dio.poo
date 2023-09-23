@@ -58,8 +58,50 @@
       - Override/Late Binding. Sobrescrita de métodos. 
       - Desta maneira o método na classe mãe receberá uma notação na sua declaração como "virtual" e na classe filha ao declarar o método deverá haver a notação de "override". Desta maneira o método poderá ser ser sobrescrito na classe filha.
 
-  
+- 7. Classes abstratas
+  - Classe abstrata caracteristicas:
+    - Funciona como um molde. Este molde fornece atributos e métodos.
+    - Os métodos da classe abstrata podem ser abstratos assim como também podem não ser abstratos.
+      - Método abstrato: serão somente declarados e sua implementação será feita na classe que herdar a classe abstrata.
+      - Método não abstrato: este é opcional, o método será sobrescrito conforme a necessida, caso o funcionamento do mesmo já atenda, não necessita sobrescrever, caso contrário, através do polimorfismo poderá ser sobrescrito.
+    - Desta forma temos dois pilares da POO diretamente sendo aplicados em classes abstratas: 
+      - Herança 
+      - Polimorfismo 
+    - Classe abstrata nã pode ser instanciada, somente herdada.
+  - Classe Selada.
+    - Este tipo de classe tem por objetivo impedir que outras classe façam herança a partir dela. Ou seja não permite "Herança".
+    - As classes também podem ter propriedades e métodos selados.  Entretanto a classe não seria selada, permitindo a herança. Contudo não permitem "Polimorfismo".
+    - A classe selada é o ponto final da herança de uma classe.
+  - Classe Object
+    - É a classe mãe de todas as classes do C#.
+    - Todas as classe originalmente herdam desta classe.
+    - Tem por objetivo prover serviços de baixo nível para as classes.
+    - Métodos exemplos:
+      - Equals(Object)
+      - Finalize()
+      - GetType()
+      - ToString()
+    - Alguns do métodos da classe object permitem sobrescrita, podendo usar do Polimorfismo. Como por exemplo o ToString().
 
+- 8. Interfaces
+  - A interface é um contrato que pode ser implementado por uma classe.
+  - A interface possue uma grande semalhança com as classes abstratas.
+  - A Interface não pode ser instanciada.
+  - Como no C# não há o conceito de herança múltipas de classe, com a interface esse conceito é possível.
+  - Métodos das interface são obrigatórios de serem implementados nas classes que as herdam. Semelhantemente aos métodos abstratos das classes.
+  - Atalho VSCode "Ctrl + ." implent Interfaces.
+  - Interfaces com implementação de métodos.
+    - Para o caso de métodos da interface que possuem implementação na própria interface, não há necessidade/obrigatoriedade de fazer a implementação nas classes que vierem a implementar esta interface. Este recurso veio a partir do C# 8.
+
+- 9. Manipulando arquivos
+  - Vejamos como através do C# podemos fazer essas manipulações.
+  - É necessário fazer uso da System.IO
+  - Classes que possibilitam estas ações:
+    - File
+    - Directory
+    - Path
+
+---
 
 
 

@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using ExemploPOO.Helper;
+using ExemploPOO.Interfaces;
 using ExemploPOO.Models;
+
 
 namespace ExemploPOO
 {
@@ -7,6 +11,9 @@ namespace ExemploPOO
     {
         static void Main(string[] args)
         {
+            // //Interfaces
+            // ICalculadora calc1 = new Calculadora();
+            // System.Console.WriteLine(calc1.Somar(10, 35));
 
             // //Classe Object
             // Computador computador1 = new Computador();
@@ -70,6 +77,24 @@ namespace ExemploPOO
             // p1.Nome = "Danilo";
             // p1.Idade = 46;
             // p1.Apresentar();
+
+            ////////////////////////////////////////////////////////////////
+            //Manipulação de Arquivo
+            var caminho = "C:\\Projetos\\CSharp\\dio\\POO\\TrabalhandoArquivos";
+            //var caminhoPathCombine1 = Path.Combine(caminho, "PastaViaCSharp", "SubPastaVia");
+            //var caminhoPathCombine2 = Path.Combine(caminho, "Pasta1");
+            // var caminhoArquivo = Path.Combine(caminho, "arquivo-teste.txt");
+            var caminhoArquivoStream = Path.Combine(caminho, "arquivo-testestream.txt");
+            //var conteudoArquivo = "Olá estamos testando o conteúdo para um arquivo. Voltando ao terceiro teste";
+            var listaString = new List<string> { "Teste de texto1", "Teste de texto2", "Teste de texto3", "Teste de texto4" };
+
+            FileHelper helper = new FileHelper();
+            //helper.ListarDiretorios(caminho);
+            //helper.ListarArquivosDiretorio(caminho);
+            //helper.CriarDiretorio(caminhoPathCombine1);
+            //helper.ApagarDiretorio(caminhoPathCombine2, true);
+            //helper.CriarArquivoTexto(caminhoArquivo, conteudoArquivo);
+            helper.CriarArquivoTextoStream(caminhoArquivoStream, listaString);
 
         }
 
