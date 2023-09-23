@@ -7,12 +7,22 @@ namespace ExemploPOO
     {
         static void Main(string[] args)
         {
-            //Polimorfismo em tempo de compilação exemplo 01
-            Calculadora calcdois = new Calculadora();
-            System.Console.WriteLine("Soma dois números " + calcdois.somar(1, 5));
 
-            Calculadora calctres = new Calculadora();
-            System.Console.WriteLine("Soma três números " + calctres.somar(1, 5, 10));
+            // //Classe Object
+            // Computador computador1 = new Computador();
+            // System.Console.WriteLine(computador1.ToString());
+
+            // //Classe abstrata
+            // Corrente conta1 = new Corrente();
+            // conta1.Creditar(100);
+            // conta1.ExibirSaldo();
+
+            // //Polimorfismo em tempo de compilação exemplo 01
+            // Calculadora calcdois = new Calculadora();
+            // System.Console.WriteLine("Soma dois números " + calcdois.somar(1, 5));
+
+            // Calculadora calctres = new Calculadora();
+            // System.Console.WriteLine("Soma três números " + calctres.somar(1, 5, 10));
 
 
             // //Polimorfismo em tempo de execução exemplo 01
