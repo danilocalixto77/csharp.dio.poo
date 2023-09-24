@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pjgw6qMFWKCiFaq9bT2DMMl9rVD3AWuKJohODQo/zqnjO5DfBBijA5kqiOlBpLlkjqAT4p/WT70mQIw88jebog==",
+  "dgSpecHash": "rSWJaqaD5/pGnTxI4M1v62/g2dL+8aOgUYslygMZ2H1TaY7SGsBMufebndd3berDU2NlNtdNKA+dn2PdM6vVAg==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\CSharp\\dio\\POO\\exemplopoo\\ExemploPOO.csproj",
+  "projectFilePath": "C:\\Projetos\\CSharp\\dio\\POO\\ExemploPOO\\ExemploPOO.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
